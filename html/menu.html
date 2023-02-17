@@ -1,0 +1,71 @@
+<html>
+	<!-- FOR THE BACKGROUND ! ITS TAKE THE PRIORITY ON THE BACKGROUND FILE ( You can also put a internet url for you background ) -->
+	<style>
+		body {
+		  background-image: url("https://images6.alphacoders.com/897/thumb-1920-897151.jpg");
+		  background-repeat: no-repeat;
+		  background-size: cover;
+		}
+	</style>
+<head>  
+	
+	<title>Garry's Mod Main Menu</title>
+	<!-- Here we link all the css content from all pages that we create  -->
+	<link rel="stylesheet" type="text/css" href="css/menu/Menu.css" />
+	<link rel="stylesheet" type="text/css" href="css/menu/NavBar.css" />
+	<link rel="stylesheet" type="text/css" href="css/menu/PageOptions.css" />
+	<link rel="stylesheet" type="text/css" href="css/menu/NewGame.css" />
+	<link rel="stylesheet" type="text/css" href="css/menu/Servers.css" />
+	<link rel="stylesheet" type="text/css" href="css/Workshop.css" />
+	<!-- Here we call the function for lua integration -->
+	<script type="text/javascript" src="js/lua.js"></script>
+	<!-- Here we call our lib -->
+	<script type="text/javascript" src="js/thirdparty/jquery.js"></script>
+	<script type="text/javascript" src="js/thirdparty/jquery-color.js"></script>
+	<script type="text/javascript" src="js/thirdparty/angular.js"></script>
+	<script type="text/javascript" src="js/thirdparty/angular-ui.js"></script>
+    <!-- Here we call all function from the main menu -->
+	<script type="text/javascript" src="js/menu/WorkshopFiles.js"></script>
+	<script type="text/javascript" src="js/menu/Subscriptions.js"></script>
+	<script type="text/javascript" src="js/menu/menuApp.js?2"></script>
+	<script type="text/javascript" src="js/menu/control.Menu.js?2"></script>
+	<script type="text/javascript" src="js/menu/control.Main.js?2"></script>
+	<script type="text/javascript" src="js/menu/control.NewGame.js"></script>
+	<script type="text/javascript" src="js/menu/control.Servers.js"></script>
+	<script type="text/javascript" src="js/menu/control.Addons.js"></script>
+	<script type="text/javascript" src="js/menu/control.Demos.js"></script>
+	<script type="text/javascript" src="js/menu/control.Saves.js"></script>
+	<script type="text/javascript" src="js/menu/control.Dupes.js"></script>
+
+	<script type="text/javascript" src="js/svc.Tranny.js"></script>
+
+	<script type="text/javascript" src="js/menu/TestData.js"></script>
+	<script type="text/javascript" src="js/menu/TestServers.js"></script>
+	<script type="text/javascript" src="js/menu/TestWorkshop.js"></script>
+
+</head>
+
+<body ng-app="MenuApp" ng-controller="MenuController">
+
+
+<div ng-view>
+
+</div>
+  <!-- Here are our Button for back to the main menu (You can replace the image on img folder) -->
+  <div class="backtomainmenu" ng-show="ShowBack">
+    <a href="#/" class="button ui_sound_return" ng-click="hideImage()">
+      <img src='img/back_to_main_menu.png'>
+      <span ng-T="'back_to_main_menu'"></span>
+    </a>
+  </div>
+  
+  <!-- Here are our "NavBar" from the bottom page (You can remove it if you dont want it ) -->
+ <!-- <div id="NavBar">
+	<ul class="right">
+		<li class="bigicon hidelabel"> <img ng-src='img/ban.png'>
+		</li>
+	</ul>
+ </div> -->
+
+</body>
+</html>

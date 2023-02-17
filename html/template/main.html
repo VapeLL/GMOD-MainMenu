@@ -1,0 +1,67 @@
+<script type="text/javascript" src="js/menu/control.Main.js?2"></script>
+<div class="page" ng-controller="ControllerMain">
+		<div class="options">
+			<ul>
+				<!-- Here you can replace the "logo" in left corner -->
+				<li><img ng-src='../html/img/logo.png' style="max-width: 240px; max-height: 240px;" /></li>
+				<li>&nbsp;</li>
+				<li>&nbsp;</li>
+				<li ng-show="InGame">
+				  <a class="btn" ng-click="BackToGame()" ng-Tranny="'resume_game'"></a>
+				</li>
+  
+				<li ng-show="InGame"></li>
+				<li><a class="btn" ng-href="#/newgame/" ng-Tranny="'Solo'"></a></li>
+				<li><a class="btn" ng-href="#/servers/" ng-Tranny="'Multijoueur'"></a></li>
+  
+				<!-- The little separator ;) -->
+				<li><img class="separator" ng-src='../html/img/sepa.png' /></li>
+				
+				<!-- Here we can find a function for login directly on a server 
+					You can edit the name for what you want in ng-Tranny="'Exemple'""
+					You can replace the ip:port for u server or just remove the line if you don't want it  -->
+				<li><a id="StopMusic" class="btn" ng-click="MenuOption( this, 'engine connect IP:PORT')" ng-Tranny="'Server 1'"> </a></li>
+				<li><a id="StopMusic" class="btn" ng-click="MenuOption( this, 'engine connect IP:PORT')" ng-Tranny="'Server 2'"> </a></li>
+  
+				<li>&nbsp;</li>
+					<!-- FOR CHANGE THE LINK OF THE BUTTON GO IN control.Menu.js and find the function ! -->
+				<li><a class="btn" ng-click="OpenBoutique()" ng-Tranny="'Website'"></a></li>
+				<li><a class="btn" ng-click="OpenDiscord()" ng-Tranny="'Discord'"></a></li>
+  
+				<li>&nbsp;</li>
+  
+				<li><a class="btn" ng-click="OpenCollection()" ng-Tranny="'Collection'"></a></li>
+				<li><a class="btn" ng-href="#/addons/" ng-Tranny="'addons'"></a></li>
+  
+				<li><img class="separator" ng-src='../html/img/sepa.png' /></li>
+  
+				<li><a class="btn" ng-click="MenuOption( this, 'OpenOptionsDialog')" ng-Tranny="'options'"></a></li>
+				<li ng-show="InGame">
+				  <a class="btn" ng-click="MenuOption( this, 'engine disconnect');" ng-Tranny="'disconnect'"></a>
+				</li>
+				<li><a class="btn" ng-click="MenuOption( this, 'Quit')" ng-Tranny="'quit'"></a></li>
+			  </ul>
+		</div>
+		
+		<!-- Here you got a music function you can change the music by change .mp3 file 
+		/ For change the button of play/pause music go to the img folder and replace with your own image -->
+		<audio id="music"  autoplay> 
+			<source src="music.mp3" type="audio/mpeg">
+		</audio>
+		<img id="playPause" src="../html/img/pause.png" alt="Pause" style="max-width: 150px; max-height: 150px;">
+		<input id="volume" type="range" min="0" max="0.5" step="0.01" value="0.1">
+		
+		<!-- Here you got the function for the panel of image (For config it u need go to control.Main.js) -->
+		<div class="news" ng-hide="NewsList.length == 0">
+			<div class="news_item" style="{{NewsItemBackground()}}">
+			  <div>
+				<span ng-click="OpenInSteam(CurrentNewsItem.Url)">
+				  {{CurrentNewsItem.Title}}
+				</span>
+				<p class="description">{{CurrentNewsItem.Description}}</p>
+			</div>
+			</div>
+		</div>
+		  
+
+</div>
