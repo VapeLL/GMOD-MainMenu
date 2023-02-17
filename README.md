@@ -1,9 +1,9 @@
 Garry's Mod HTML Main Menu
 =============
 
--A HTML main menu for Garry's Mod. !
--New Features !
--New Design that can be customize !
+* A HTML main menu for Garry's Mod. !
+* New Features !
+* New Design that can be customize !
 
 New Features
 =============
