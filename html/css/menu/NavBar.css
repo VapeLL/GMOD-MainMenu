@@ -1,0 +1,40 @@
+
+#NavBar
+{
+	position: absolute;
+	bottom: -1px;
+	height: 50px;
+	left: 1.5px;
+	right: 0;
+}
+
+#NavBar UL
+{
+	display: block;
+	margin: 0;
+	padding: 0;
+}
+
+#NavBar .bigicon
+{
+	min-width: 5px;
+}
+
+#NavBar .bigicon img
+{
+	margin-top: -1px;
+	margin-left: -1px;
+}
+
+/* 800x600 and lower */
+@media (max-width: 940px)
+{
+	#NavBar .hidelabel span
+	{
+		display: none;
+	}
+	#NavBar .right
+	{
+		margin-left: 15px;
+	}
+}
