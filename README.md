@@ -22,4 +22,4 @@ Then replace all the files : )
 Uninstalling
 =============
 
-To uninstall this, open Steam and launch a verification of files that would replace my html folder !
+To uninstall this, open Steam and launch a verification of files that would replace my html folder and get the original back !
