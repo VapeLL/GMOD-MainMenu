@@ -15,7 +15,8 @@ New Features
 
 Preview
 =============
-![Preview](https://ibb.co/82bgJYL)
+![Preview](https://user-images.githubusercontent.com/78873878/222491573-6ae39222-cb5c-4fd1-9381-ef1dc2c989d9.jpg)
+
 
 Installing
 =============
