@@ -15,7 +15,7 @@ New Features
 
 Preview
 =============
-https://imgur.com/IIBCC9V
+
 
 Installing
 =============
