@@ -15,7 +15,7 @@ New Features
 
 Preview
 =============
-![PREVIEW](https://imgur.com/a/D5M3KKr)
+![PREVIEW](https://imgur.com/SOV7gfV)
 
 Installing
 =============
