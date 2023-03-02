@@ -13,6 +13,10 @@ New Features
 * Image Carousel with clickable links 
 * Button for connect directly to a server
 
+Preview
+=============
+
+
 Installing
 =============
 
